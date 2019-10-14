@@ -5,10 +5,10 @@ public class Person extends NameHolder
 	private String lastName;
 	public Person() throws NameException
 	{
-		String temp1 = "Bo";
-		String temp2 = "Smith";
-		lastName = temp1;
-		super.setFirstName(temp2);
+		String firstNameDefault = "Bo";
+		String lastNameDefault = "Smith";
+		lastName = lastNameDefault;
+		super.setFirstName(firstNameDefault);
 	}
 	
 	public Person(String firstName, String lastName) throws NameException
