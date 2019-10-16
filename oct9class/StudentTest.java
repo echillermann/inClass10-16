@@ -78,9 +78,14 @@ public class StudentTest {
 
 	@Test
 	public void testCompareTo() throws NameException {
-		Student first = new Student("z","z",4);
-		Student second = new Student("v","v",2);
-		Student third = new Student("c","c",4);
+		Student first = new Student("A","B",4);
+		Student second = new Student("A","C",2);
+		Student third = new Student("A","A",4);
+		
+		CompareLastFirstName clfn = new CompareLastFirstName();
+		
+		clfn.compare(first, second);
+		
 		
 		int actual = first.compareTo(second);
 		int expected = 1;
