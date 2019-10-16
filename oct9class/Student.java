@@ -30,9 +30,24 @@ public class Student extends Person implements Comparable<Student>
 		return rating;
 	}
 	
+	public void setRating(int rating)
+	{
+		this.rating = rating;
+	}
+	
 	public int compareTo(Student o)
 	{
-		
-		return 0;
+		if(rating < o.getRating())
+		{
+			return -1;
+		}
+		else if(rating > o.getRating())
+		{
+			return 1;
+		}
+		else
+		{
+			return 0;
+		}
 	}
 }
